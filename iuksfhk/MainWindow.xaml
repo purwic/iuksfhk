@@ -1,0 +1,26 @@
+﻿<Window x:Class="iuksfhk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:iuksfhk"
+        mc:Ignorable="d"
+        Title="Marathon Skills 2016" Height="460" Width="605"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Frame x:Name="frame1" Source="Page1.xaml" NavigationUIVisibility="Hidden" />
+        <Frame x:Name="frame2" Source="Page2.xaml" Visibility="Collapsed" NavigationUIVisibility="Hidden" />
+        
+        <Label Grid.Row="1" Content="18 дней 8 часов и 17 минут до старта марафона!" 
+               Background="#505050" Foreground="White" 
+               FontFamily="Open Sans"
+               FontWeight="Light"
+               HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+               VerticalAlignment="Center" Height="28" Margin="0,2,0,0"></Label>
+    </Grid>
+</Window>
